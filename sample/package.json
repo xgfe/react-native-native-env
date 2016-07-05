@@ -1,0 +1,13 @@
+{
+  "name": "samples",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-native start"
+  },
+  "dependencies": {
+    "react": "15.1.0",
+    "react-native": "^0.28.0",
+    "react-native-native-env": "0.0.1"
+  }
+}
