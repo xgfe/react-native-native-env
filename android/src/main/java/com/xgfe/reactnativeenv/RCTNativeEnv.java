@@ -20,9 +20,11 @@ public class RCTNativeEnv extends ReactContextBaseJavaModule implements Lifecycl
 
     public static void initEnv(Class buildConfig, Map envs) {
         //try to get info from buildConfig and others
-        addEnv(NativeInfoHelper.getBuildConfigInfo(buildConfig));
+        addEnvs(NativeInfoHelper.getBuildConfigInfo(buildConfig));
         //try to get info from map
-        addEnv(envs);
+        if(envs != null) {
+            addEnvs(envs);
+        }
         isInit = true;
     }
 
@@ -30,7 +32,7 @@ public class RCTNativeEnv extends ReactContextBaseJavaModule implements Lifecycl
         env.put(key, value);
     }
 
-    public static void addEnv(Map<String, Object> map) {
+    public static void addEnvs(Map<String, Object> map) {
         env.putAll(map);
     }
 

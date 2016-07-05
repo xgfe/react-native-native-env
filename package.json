@@ -1,6 +1,6 @@
 {
   "name": "react-native-native-env",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Providing environment variables from native to js in React Native. ",
   "main": "index.js",
   "scripts": {
@@ -15,9 +15,5 @@
     "url": "git+https://github.com/xgfe/react-native-native-env.git"
   },
   "author": "xgfe",
-  "license": "MIT",
-  "dependencies": {
-    "react": "15.1.0",
-    "react-native": "^0.28.0"
-  }
+  "license": "MIT"
 }

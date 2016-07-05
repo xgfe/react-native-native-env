@@ -8,6 +8,6 @@
   "dependencies": {
     "react": "15.1.0",
     "react-native": "^0.28.0",
-    "react-native-native-env": "0.0.1"
+    "react-native-native-env": "0.0.3"
   }
 }
