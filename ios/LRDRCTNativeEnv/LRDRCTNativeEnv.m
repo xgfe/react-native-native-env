@@ -14,9 +14,11 @@ static NSMutableDictionary *infos;
 
 + (void)initialize {
     if (self == [LRDRCTNativeEnv class]) {
+        NSLocale *locale = [NSLocale currentLocale];
         infos = [[NSMutableDictionary alloc] init];
         NSDictionary *env = [[NSProcessInfo processInfo] environment];
         [infos addEntriesFromDictionary:env];
+        infos[@"NSLocaleUsesMetricSystem"] = [locale objectForKey:NSLocaleUsesMetricSystem];
         [infos setObject:[[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleIdentifier"] forKey:@"APPLICATION_ID"];
         [infos setObject:[[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleName"] forKey:@"APPLICATION_NAME"];
         [infos setObject:[[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleVersion"] forKey:@"VERSION_CODE"];
