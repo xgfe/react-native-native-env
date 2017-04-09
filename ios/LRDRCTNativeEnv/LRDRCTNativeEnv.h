@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RCTBridgeModule.h"
+#import <React/RCTBridgeModule.h>
 
 @interface LRDRCTNativeEnv : NSObject <RCTBridgeModule>
 + (void) addEnv:(NSString*)key value:(id)value;
