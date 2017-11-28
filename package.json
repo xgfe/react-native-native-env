@@ -1,6 +1,6 @@
 {
   "name": "react-native-native-env",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Providing environment variables from native to js in React Native. ",
   "main": "index.js",
   "scripts": {
